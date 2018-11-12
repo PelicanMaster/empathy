@@ -4,7 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "babel-node server.js"
+    "postinstall": "npm run build",
+    "build": "make",
+    "start": "babel-node server.js",
+    "dev": "nodemon server.js --exec babel-node"
   },
   "repository": {
     "type": "git",
@@ -23,5 +26,8 @@
     "@babel/preset-stage-2": "^7.0.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
   }
 }

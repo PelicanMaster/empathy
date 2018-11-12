@@ -7,7 +7,7 @@ CFLAGS = -O3
 LDFLAGS =
 LDLIBS =
 
-# All the source files ended in '.c' in $(SRC_DIR) directory
+# All the source files ending in '.c' in $(SRC_DIR) directory
 SRCS := $(wildcard $(SRC_DIR)/*.c)
 
 # Get the corresponding object file of each source file
@@ -35,7 +35,7 @@ $(OBJ_DIR) :
 	@echo OBJ_DIR created!
 
 clean :
-	@echo "cleanning..."
+	@echo "cleaning..."
 	-rm -rf $(OBJ_DIR)
 	@echo "clean done!"
 

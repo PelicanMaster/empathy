@@ -1,3 +1,6 @@
+# Build
+.obj/
+
+# Dependencies
 node_modules/
-\.obj/
 package-lock.json
