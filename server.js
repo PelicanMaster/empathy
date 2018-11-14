@@ -38,5 +38,9 @@ app.get('/fibonacci/:nth', (req, res) => {
     res.send(output);
 });
 
+app.get('*', (req, res) => {
+    res.send('Hello, world.');
+});
+
 app.listen(port);
 console.log(`[${new Date()}] Server started.`);

@@ -1,3 +1,6 @@
 {
-	"alias": ["empathy-test"]
+	"alias": ["empathy-test"],
+	"env": {
+    	"PORT": "80"
+  	}
 }
