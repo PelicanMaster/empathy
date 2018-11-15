@@ -14,3 +14,6 @@ class Human:
 
     def __repr__(self):
         return (str(self.gender))
+
+    def eat(self, food):
+        print("Human eat" + str(food))
