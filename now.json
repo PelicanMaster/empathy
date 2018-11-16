@@ -4,6 +4,6 @@
     	"PORT": "80"
   	},
 	"builds": [
-    	{ "src": "server.js", "use": "@now/node" }
+    	{ "src": "src/server.js", "use": "@now/node" }
 	]
 }
