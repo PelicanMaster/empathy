@@ -1,1 +1,1 @@
-# [Empathy-test](https://empathy-test.now.sh)
+# [Empathy-test](https://empathy-test.herokuapp.com/)

@@ -1,9 +1,0 @@
-{
-	"alias": ["empathy-test"],
-	"env": {
-    	"PORT": "80"
-  	},
-	"builds": [
-    	{ "src": "src/server.js", "use": "@now/node-server" }
-	]
-}
