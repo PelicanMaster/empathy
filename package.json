@@ -23,7 +23,8 @@
     "@babel/preset-env": "^7.1.5",
     "@babel/preset-stage-2": "^7.0.0",
     "body-parser": "^1.18.3",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "express-session": "^1.15.6"
   },
   "devDependencies": {
     "nodemon": "^1.18.6"
