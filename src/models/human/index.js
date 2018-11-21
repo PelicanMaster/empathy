@@ -6,7 +6,7 @@ export const SEX = {
     UNKNOWN: 99
 };
 
-const DEFAULT_NAME = "Human";
+const DEFAULT_NAME = 'Human';
 
 export default class Human {
     constructor(sex = SEX.UNKNOWN) {

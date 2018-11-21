@@ -1,11 +1,11 @@
-import Human from '../models/human'
+import Human from '../models/human';
 
 class HumanStore {
-    constructor () {
+    constructor() {
         this.store = {};
     }
 
-    get (id) {
+    get(id) {
         let item = this.store[id];
 
         if (!item) {
@@ -15,7 +15,7 @@ class HumanStore {
         return item;
     }
 
-    set (id, value) {
+    set(id, value) {
         this.store[id] = value;
     }
 }
