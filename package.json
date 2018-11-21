@@ -27,6 +27,7 @@
     "express-session": "^1.15.6"
   },
   "devDependencies": {
+    "dumper.js": "^1.2.0",
     "nodemon": "^1.18.6"
   }
 }

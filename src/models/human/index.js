@@ -6,20 +6,24 @@ export const SEX = {
     UNKNOWN: 99
 };
 
-const DEFAULT_NAME = 'Human';
+const DEFAULT_NAME = "Human";
 
 export default class Human {
-    constructor (sex = SEX.UNKNOWN) {
+    constructor(sex = SEX.UNKNOWN) {
         this.sex = sex;
         this.name = null;
     }
 
-    eat (food) {
+    eat(food) {
         return `${this.name || DEFAULT_NAME} eats ${food}`;
     }
 
-    say (sentence) {
+    say(sentence) {
         return `${this.name || DEFAULT_NAME} growls ${sentence}`;
     }
 
+    listen(sound) {
+        return `${this.name ||
+            DEFAULT_NAME} is listening to ${sound}, damn that feels right ...`;
+    }
 }
