@@ -1,20 +1,40 @@
-import { isString, isUndefined } from "util";
-import { Human } from "../models/Human/human";
+import Human from '../models/human'
+import store from '../utils/humanStore'
+
+export function setHumanName(req, res) {
+    let { name } = req.params;
+
+    if (typeof name !== 'string') {
+        res.sendStatus(400);
+        throw new Error('Please provide name to Human.');
+    }
+
+    let human = store.get(req.session.id);
+    human.name = name;
+
+    res.send(human.say(' his name'));
+}
 
 export function humanEat(req, res) {
-    if ( isUndefined(req.params.food) || !isString(req.params.food)) {
+    let { food } = req.params;
+
+    if (typeof food !== 'string') {
         res.sendStatus(400);
         throw new Error('Please provide food to Human.');
     }
 
-    res.send(new Human().eat(req.params.food));
+    let human = store.get(req.session.id);
+    res.send(human.eat(food));
 }
 
 export function humanSay(req, res) {
-    if ( isUndefined(req.params.sentence) || !isString(req.params.sentence)) {
+    let { sentence } = req.params;
+
+    if (typeof sentence !== 'string') {
         res.sendStatus(400);
         throw new Error('Please provide something to say to Human.');
     }
 
-    res.send(new Human().say(req.params.sentence));
+    let human = store.get(req.session.id);
+    res.send(human.say(sentence));
 }
