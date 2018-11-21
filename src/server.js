@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 8080,
       app = express();
 
 app.use(bodyParser.json());
+app.set('trust proxy', 1);
 app.use(session({
     secret: SESSION_SECRET,
     resave: false,
